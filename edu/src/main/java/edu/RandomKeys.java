@@ -11,7 +11,7 @@ public class RandomKeys implements Keys {
     // Constructor doesn't have input parameters
     public RandomKeys() {
         totalCount++;
-    }
+    } //
 
     @Override
     public String publicKey() {

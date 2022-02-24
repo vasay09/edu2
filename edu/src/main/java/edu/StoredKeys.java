@@ -2,11 +2,7 @@ package edu;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-//import com.jogamp.common.net.Uri;
-
-import javax.crypto.SecretKey;
 import java.io.IOException;
-import java.security.PublicKey;
 
 import static edu.Utils.*;
 

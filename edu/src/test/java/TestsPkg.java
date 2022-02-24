@@ -6,11 +6,14 @@ import com.jcabi.jdbc.SingleOutcome;
 import com.zaxxer.hikari.HikariDataSource;
 import edu.*;
 import org.junit.jupiter.api.Test;
+import org.apache.log4j.Logger;
+
 
 import java.io.IOException;
 import java.sql.SQLException;
 
 public class TestsPkg {
+    private static final Logger log = Logger.getLogger(TestsPkg.class);
 
 //    @Test
 //    public void testGettingKeysFromJsonFile() throws IOException, SQLException {
