@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class TestsPkg {
-    private static final Logger log = Logger.getLogger(TestsPkg.class);
+    private static final Logger log = Logger.getLogger(TestsPkg.class); //
 
 //    @Test
 //    public void testGettingKeysFromJsonFile() throws IOException, SQLException {
