@@ -129,6 +129,7 @@ public class TestsPkg {
         keys = StoredKeys.ofGiver();
         System.out.println("30 " + keys.publicKey());
         // all constructors and static method should have minimum code duplication
+        //New info
     }
 
 }
