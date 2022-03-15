@@ -134,7 +134,7 @@ public class TestsPkg {
         log.assertLog(true,"123");
         //log.debug(keys.publicKey());
         // all constructors and static method should have minimum code duplication
-        //New info
+        //New info2223
     }
 
 }
