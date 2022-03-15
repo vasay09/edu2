@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class TestsPkg {
-    private static final Logger log = Logger.getLogger(TestsPkg.class); //
+    private static final Logger log = Logger.getLogger(TestsPkg.class);
 
 //    @Test
 //    public void testGettingKeysFromJsonFile() throws IOException, SQLException {
@@ -128,6 +128,11 @@ public class TestsPkg {
         // static method that uses Utils constant for known Giver keys file
         keys = StoredKeys.ofGiver();
         System.out.println("30 " + keys.publicKey());
+        //log.info(keys.publicKey());
+        //log.warn(keys.publicKey());
+        //log.error(keys.publicKey());
+        log.assertLog(true,"123");
+        //log.debug(keys.publicKey());
         // all constructors and static method should have minimum code duplication
         //New info
     }
