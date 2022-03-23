@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestsPkg" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-24T13:59:00" hostname="DESKTOP-S6BPNN8" time="0.079">
+<testsuite name="TestsPkg" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-23T16:01:39" hostname="DESKTOP-S6BPNN8" time="0.256">
   <properties/>
-  <testcase name="testConstructors()" classname="TestsPkg" time="0.079"/>
-  <system-out><![CDATA[30 2ada2e65ab8eeab09490e3521415f45b6e42df9c760a639bcf53957550b25a16
+  <testcase name="Learning Gson()" classname="TestsPkg" time="0.256"/>
+  <system-out><![CDATA[123
+0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

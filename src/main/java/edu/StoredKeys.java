@@ -8,7 +8,6 @@ import static edu.Utils.*;
 
 public class StoredKeys extends RandomKeys {
     String PublicKey, SecretKey;
-
     //read
 //    public StoredKeys(String path) throws IOException {
 //        String json = Utils.jsonFromFile(path);

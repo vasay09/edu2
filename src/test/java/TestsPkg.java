@@ -5,15 +5,17 @@ import com.jcabi.jdbc.JdbcSession;
 import com.jcabi.jdbc.SingleOutcome;
 import com.zaxxer.hikari.HikariDataSource;
 import edu.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.apache.log4j.Logger;
+//import lombok.extern.log4j.Log4j2;
 
 
 import java.io.IOException;
 import java.sql.SQLException;
 
+//@Log4j2
 public class TestsPkg {
-    private static final Logger log = Logger.getLogger(TestsPkg.class);
+    //private static final Logger log = Logger.getLogger(TestsPkg.class);
 
 //    @Test
 //    public void testGettingKeysFromJsonFile() throws IOException, SQLException {
@@ -131,10 +133,23 @@ public class TestsPkg {
         //log.info(keys.publicKey());
         //log.warn(keys.publicKey());
         //log.error(keys.publicKey());
-        log.assertLog(true,"123");
+        //log.assertLog(true,"123");
         //log.debug(keys.publicKey());
         // all constructors and static method should have minimum code duplication
         //New info2223
+    }
+
+    @Test
+    @DisplayName("Learning Gson()")
+    public void testGsonBuilder() {
+        Gson gson = new Gson();
+        Entity entity = new Entity(100, "name");
+        entity.random = 1234;
+        //System.out.println("123");
+
+        String json = gson.toJson(entity); // {"id":100,"name":"name"}
+        Entity read = gson.fromJson(json, Entity.class);
+        System.out.println(read.);   // 0
     }
 
 }
