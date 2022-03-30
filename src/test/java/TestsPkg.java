@@ -7,13 +7,13 @@ import com.zaxxer.hikari.HikariDataSource;
 import edu.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-//import lombok.extern.log4j.Log4j2;
+import lombok.extern.log4j.Log4j2;
 
 
 import java.io.IOException;
 import java.sql.SQLException;
 
-//@Log4j2
+@Log4j2
 public class TestsPkg {
     //private static final Logger log = Logger.getLogger(TestsPkg.class);
 
@@ -146,10 +146,23 @@ public class TestsPkg {
         Entity entity = new Entity(100, "name");
         entity.random = 1234;
         //System.out.println("123");
+        log.debug("123");
 
         String json = gson.toJson(entity); // {"id":100,"name":"name"}
         Entity read = gson.fromJson(json, Entity.class);
-        System.out.println(read.);   // 0
+        //System.out.println(read.);   // 0
+    }
+
+    @Test
+    @DisplayName("Learning Builder")
+    public void testBuilder() {
+        Person myPerson = new Person.Builder()
+                .withName("Serega")
+                .withSurname("Seregovich")
+                .withAge(31)
+                .withHeight(176)
+                .withWeight(73)
+                .build();
     }
 
 }
