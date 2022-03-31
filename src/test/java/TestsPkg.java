@@ -1,9 +1,4 @@
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.jcabi.jdbc.JdbcSession;
-import com.jcabi.jdbc.SingleOutcome;
-import com.zaxxer.hikari.HikariDataSource;
 import edu.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,7 +6,6 @@ import lombok.extern.log4j.Log4j2;
 
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 @Log4j2
 public class TestsPkg {
@@ -156,12 +150,12 @@ public class TestsPkg {
     @Test
     @DisplayName("Learning Builder")
     public void testBuilder() {
-        Person myPerson = new Person.Builder()
+        Person myPerson = new BuilderPerson()
                 .withName("Serega")
                 .withSurname("Seregovich")
-                .withAge(31)
+                //.withAge(31)
                 .withHeight(176)
-                .withWeight(73)
+                //.withWeight(73)
                 .build();
     }
 

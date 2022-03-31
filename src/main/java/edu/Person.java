@@ -3,58 +3,25 @@ package edu;
 import java.util.Set;
 
 public class Person {
-    private String name;
-    private String surname;
-    private int age;
-    private int height;
-    private int weight;
-    private Set<Person> parents;
+    private final String name;
+    private final String surname;
+    private final int age;
+    private final int height;
+    private final int weight;
+    private final Set<Person> parents;
+
+    public Person (String name, String surname, int age, int height, int weight,  Set<Person> parents) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.parents = parents;
+    }
 
     //simple, next going builder
 
-    public static class Builder {
-        private Person newPerson;
-
-        public Builder() {
-            newPerson = new Person();
-        }
-
-        public Builder withName(String name) {
-            newPerson.name = name;
-            return this;
-        }
-
-        public Builder withSurname(String surname) {
-            newPerson.surname = surname;
-            return this;
-        }
-
-        public Builder withAge(int age) {
-            newPerson.age = age;
-            return this;
-        }
-
-        public Builder withHeight(int height) {
-            newPerson.height = height;
-            return this;
-        }
-
-        public Builder withWeight(int weight) {
-            newPerson.weight = weight;
-            return this;
-        }
-
-        public Builder withParent(Set<Person> parents) {
-            newPerson.parents = parents;
-            return this;
-        }
-
-        public Person build() {
-            return newPerson;
-        }
-    }
-
-//    Person (String name, String surname) {
+    //    Person (String name, String surname) {
 //        this.name = name;
 //        this.surname = surname;
 //    }
